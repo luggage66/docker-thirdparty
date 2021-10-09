@@ -19,7 +19,7 @@ RUN wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add - \
  && apt-get update -y \
  && apt-get install -y --install-recommends winehq-stable
 
-ENV VALHEIM_VERSION "2021.02.16"
+ENV VALHEIM_VERSION "2021.10.04"
 RUN cd /usr/games \
  && ./steamcmd +@sSteamCmdForcePlatformType windows +login anonymous +force_install_dir /home/valheimserver/server +app_update 896660 +exit
 
