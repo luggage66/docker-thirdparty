@@ -28,4 +28,4 @@ WORKDIR /home/valheimserver/server
 COPY start_valheim.sh /home/valheimserver/server
 
 # CMD [ "/bin/bash", "-c", "xvfb-run --auto-servernum --server-args='-screen 640x480x24:32' env"]
-CMD [ "/bin/bash", "-c", "/home/valheimserver/server/start_valheim.sh"]
+CMD [ "/bin/bash", "/home/valheimserver/server/start_valheim.sh"]
